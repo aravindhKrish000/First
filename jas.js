@@ -1,19 +1,24 @@
 
 var input= document.getElementById("comments");
 
+console.log("vanakam de mapla");
+
 var t1;
 var t2;
-function res() {
-document.getElementById("speed")=(t1-t2)/1000;
 
+function res()
+{
+
+  alert(((t1-t2)/1000)+" seconds");
 }
+
+
 alert("Get Ready!");
 function enter (event) {
  if (event.keyCode === 13) {
   event.preventDefault();
   t1=new Date().getTime();
-  document.getElementById("speed")=(t1-t2)/1000;
-
+  alert(((t1-t2)/1000)+" seconds");
 }
 }
 
@@ -28,8 +33,8 @@ function anykey (event) {
 function cli () {
   t1=new Date().getTime();
 
-  document.getElementById("speed")=(t1-t2)/1000;
-    
+  alert(((t1-t2)/1000)+" seconds");
+   
 
 }
 
